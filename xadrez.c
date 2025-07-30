@@ -28,5 +28,56 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+
+    //                       Nivel Novato
+    // ------------------ MOVIMENTO DA TORRE ------------------
+    // A Torre anda 5 casas para a direita
+    // Usaremos o laço FOR para simular o movimento
+
+    int casasTorre = 5;   // numero de movimentos para a torra
+    int casasBispo = 5;   // numero de movimentos para o bispo
+    int casasRainha = 8;  // numero de movimentos para a rainha
+    int contador = 1;  // contador de repetições para uso geral  dos laços de repetição while e do-while
+    
+
+    printf("Movimento da Torre:\n");
+
+    for (int i = 1; i <= casasTorre; i++) {
+        printf("Direita\n");
+    }
+
+
+    //                       Nivel Novato
+    // ------------------ MOVIMENTO DO BISPO ------------------
+    // O Bispo anda 5 casas na diagonal para cima e à direita
+    // Usaremos o laço WHILE para simular o movimento
+
+    printf("\nMovimento do Bispo:\n");
+
+    // inicio o contador 
+    contador = 1;
+
+    while (contador <= casasBispo) {
+        printf("Cima\n");
+        printf("Direita\n");
+        contador++;
+    }
+
+
+    //                       Nivel Novato
+    // ------------------ MOVIMENTO DA RAINHA ------------------
+    // A Rainha anda 8 casas para a esquerda
+    // Usaremos o laço DO-WHILE para simular o movimento
+
+    printf("\nMovimento da Rainha:\n");
+
+    // inicio o contador 
+    contador = 1;
+
+    do {
+        printf("Esquerda\n");
+        contador++;
+    } while (contador <= casasRainha);
+
     return 0;
 }
