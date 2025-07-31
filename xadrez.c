@@ -31,6 +31,7 @@ void moverRainhaEsquerda(int casas) {
 
 // CAVALO: Move uma única vez em "L" (duas casas para cima e uma para a direita), usando loops complexos
 // alterado por sugest"ao da tutoria
+
 void moverCavaloEmL() {    
     // Duas casas para Cima
     for (int i = 0; i < 2; i++) {        
