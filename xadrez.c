@@ -37,7 +37,10 @@ int main() {
     int casasTorre = 5;   // numero de movimentos para a torra
     int casasBispo = 5;   // numero de movimentos para o bispo
     int casasRainha = 8;  // numero de movimentos para a rainha
-    int contador = 1;  // contador de repetições para uso geral  dos laços de repetição while e do-while
+    int contador_bispo = 1;  // contador de repetições para uso do bispo  dos laços de repetição while e do-while
+    int contador_rainha = 1;  // contador de repetições para uso da rainha  dos laços de repetição while e do-while
+    int contador_cavalo_vertical = 1;  // contador de repetições para uso do cavalo  dos laços de repetição while e do-while
+    int contador_cavalo_horizontal = 1;  // contador de repetições para uso do cavalo  dos laços de repetição while e do-while
     
 
     printf("Movimento da Torre:\n");
@@ -54,13 +57,10 @@ int main() {
 
     printf("\nMovimento do Bispo:\n");
 
-    // inicio o contador 
-    contador = 1;
-
-    while (contador <= casasBispo) {
+    while (contador_bispo <= casasBispo) {
         printf("Cima\n");
         printf("Direita\n");
-        contador++;
+        contador_bispo++;
     }
 
 
@@ -71,13 +71,28 @@ int main() {
 
     printf("\nMovimento da Rainha:\n");
 
-    // inicio o contador 
-    contador = 1;
-
     do {
         printf("Esquerda\n");
-        contador++;
-    } while (contador <= casasRainha);
+        contador_rainha++;
+    } while (contador_rainha <= casasRainha);
+
+
+    //                     Nivel Aventureiro
+    // ------------------ MOVIMENTO DO CAVALO ------------------
+    // O Cavalo anda 1 casa para a esquerda e duas para baixo
+    // Usaremos o laço FOR e DO-WHILE para simular o movimento
+
+    do {
+        printf("\nMovimento do Cavalo:\n");
+        printf("Esquerda\n");
+              
+        for (contador_cavalo_vertical=1; contador_cavalo_vertical <=2;contador_cavalo_vertical++)
+         {
+          printf("Baixo\n");
+         }
+        
+         contador_cavalo_horizontal++;
+    } while (contador_cavalo_horizontal == 1);
 
     return 0;
 }
