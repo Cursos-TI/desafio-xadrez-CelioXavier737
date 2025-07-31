@@ -13,18 +13,14 @@ void moverTorreDireita(int casas) {
 }
 
 // BISPO: Move uma única vez em diagonal (cima + direita), N casas, usando loops aninhados com recursividade
-void moverBispoDiagonal(int casas, int atual) {
-    if (atual > casas) return;
-
-    for (int linha = atual; linha <= atual; linha++) {
-        for (int coluna = atual; coluna <= atual; coluna++) {
-            printf("Cima\n");
-            printf("Direita\n");
-        }
-    }
-
+// alterada por sugestão da tutoria
+void moverBispoDiagonal(int casas, int atual) {    
+    if (atual > casas) return;    
+    printf("Cima\n");    
+    printf("Direita\n");    
     moverBispoDiagonal(casas, atual + 1);
 }
+
 
 // RAINHA: Move recursivamente uma única vez para a esquerda, N casas
 void moverRainhaEsquerda(int casas) {
@@ -34,6 +30,18 @@ void moverRainhaEsquerda(int casas) {
 }
 
 // CAVALO: Move uma única vez em "L" (duas casas para cima e uma para a direita), usando loops complexos
+// alterado por sugest"ao da tutoria
+void moverCavaloEmL() {    
+    // Duas casas para Cima
+    for (int i = 0; i < 2; i++) {        
+        printf("Cima\n");    
+    }    
+    // Uma casa para Direita    
+    for (int j = 0; j < 1; j++) { 
+        printf("Direita\n"); 
+    }    
+}
+
 void moverCavaloEmL() {
     int dx[] = {-2}; // duas casas para cima
     int dy[] = {1};  // uma casa para a direita
